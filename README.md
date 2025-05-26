@@ -8,6 +8,7 @@ Installation:
 Features:
 - Exclude Followers
 - Create Custom Lists
+- Import Lists
 - More To Come!
 
 This is still a work in progress so the jank UI will be finished whenever I can be arsed
