@@ -3,7 +3,7 @@ Blocker for x.com/twitter chat bots such as @grok
 
 Installation:
 - Download And Extract The Folder
-- Load As Unpackaged In chrome://extensions/
+- Load As Unpacked In chrome://extensions/
 
 Features:
 - Exclude Followers
