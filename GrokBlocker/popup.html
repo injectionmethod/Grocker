@@ -42,12 +42,11 @@
     Block other chatbots
   </label>
 
-  <textarea
-    id="botList"
-    rows="2"
-    placeholder="@bot1
-@bot2"
-  ></textarea>
+<textarea id="customBotList" rows="4" placeholder="@bot1\n@bot2"></textarea>
+
+<label for="fileInput">Import bot list from .txt file:</label>
+<input type="file" id="fileInput" accept=".txt" />
+
 
   <button id="runGrocker">Run Grocker</button>
 
