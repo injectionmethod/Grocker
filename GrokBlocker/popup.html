@@ -9,11 +9,20 @@
       font-family: Arial, sans-serif;
       padding: 10px;
       width: 350px;
+      background-color: #f5f8fa;
     }
     label {
-      display: block;
+      display: flex;
+      align-items: center;
       margin-bottom: 8px;
       font-size: 14px;
+      cursor: pointer;
+    }
+    label input[type="checkbox"] {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
     }
     textarea {
       width: 100%;
@@ -22,12 +31,26 @@
       font-size: 14px;
       margin-bottom: 12px;
       box-sizing: border-box;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="file"] {
+      margin-bottom: 12px;
     }
     button {
       width: 100%;
-      padding: 8px;
+      padding: 10px;
       font-size: 16px;
       cursor: pointer;
+      background-color: #1da1f2;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0d8ddb;
     }
   </style>
 </head>
@@ -42,11 +65,10 @@
     Block other chatbots
   </label>
 
-<textarea id="customBotList" rows="4" placeholder="@bot1\n@bot2"></textarea>
+  <textarea id="customBotList" rows="4" placeholder="@bot1\n@bot2"></textarea>
 
-<label for="fileInput">Import bot list from .txt file:</label>
-<input type="file" id="fileInput" accept=".txt" />
-
+  <label for="fileInput">Import bot list from .txt file:</label>
+  <input type="file" id="fileInput" accept=".txt" />
 
   <button id="runGrocker">Run Grocker</button>
 
