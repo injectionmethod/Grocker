@@ -13,5 +13,6 @@ Features:
 
 This is still a work in progress so the jank UI will be finished whenever I can be arsed
 
-![image](https://github.com/user-attachments/assets/c9825776-d590-4e5d-869e-b7e2676e1bcf)
+![image](https://github.com/user-attachments/assets/e25779aa-2935-4f80-8224-0f109c214663)
+
 
