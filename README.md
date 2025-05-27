@@ -7,6 +7,7 @@ Installation:
 
 Features:
 - Exclude Followers
+- Manually Add Accounts
 - Import Lists
 - More To Come!
 
