@@ -16,14 +16,13 @@ function hideTweets() {
       tweets.forEach((tweet) => {
         const text = tweet.innerText.toLowerCase();
 
-        // Check if tweet mentions any blocked bot
+
         const mentionsBlockedBot = botsToBlock.some((bot) => text.includes(bot));
 
         if (!mentionsBlockedBot) return; // nothing to block here
 
         let isFollowing = false;
-        // Determine if tweet author is followed:
-        // This depends on Twitter's DOM — adjust selector if Twitter updates its UI
+
         const followBadge = tweet.querySelector('span[aria-label*="Following"]');
         if (followBadge) {
           isFollowing = true;
@@ -32,7 +31,7 @@ function hideTweets() {
         if (!excludeFollowers || !isFollowing) {
           tweet.style.display = 'none';
         } else {
-          tweet.style.display = ''; // show if excluded follower
+          tweet.style.display = ''; 
         }
       });
     }
